@@ -1,0 +1,1629 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="generator" content="Hugo 0.65.1" />
+
+    <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158779966-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-158779966-1');
+</script>
+
+<script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=GTM-5DKBHPT' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5DKBHPT');
+</script>
+
+
+
+<script>
+function InvalidMsg(textbox) {
+    
+    if (textbox.value == '') {
+        textbox.setCustomValidity('Laukelis negali būti tuščias');
+    }
+    else if(textbox.validity.typeMismatch){
+        textbox.setCustomValidity('Įrašykite teisingą el. pašto adresą');
+    }
+    else {
+        textbox.setCustomValidity('');
+    }
+    return true;
+}
+</script>
+
+
+
+<script>
+function disableBtn(){
+    document.getElementById("send-msg").disabled = true;
+}
+function enableBtn(){
+    document.getElementById("send-msg").disabled = false;
+}
+</script>
+
+
+<script src='https://www.google.com/recaptcha/api.js?explicit&hl=lt'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<title>IT darbo rinka Lietuvoje</title>
+<style>
+     
+    .rad-fade-in {
+        will-change: opacity, transform;
+        animation-name: rad-fade-in-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-fallback {
+        0% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .fonts-loaded .rad-fade-in.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+    }
+
+    .fonts-loaded .rad-fade-in.rad-animate {
+        animation-name: rad-fade-in;
+        animation-duration: 1.1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+     
+    .rad-fade-in-long {
+        will-change: opacity, transform;
+        animation-name: rad-fade-in-long-fallback;
+        animation-duration: 8s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-long-fallback {
+        0% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .fonts-loaded .rad-fade-in-long.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+    }
+
+    .fonts-loaded .rad-fade-in-long.rad-animate {
+        animation-name: rad-fade-in-long;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-long {
+        0% {
+            opacity: 0;
+        }
+
+        20% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+     
+    .rad-fade-down {
+        will-change: opacity, transform;
+        animation-name: rad-fade-down-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        transform: translateY(-30px);
+    }
+
+    @keyframes rad-fade-down-fallback {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        75% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .fonts-loaded .rad-fade-down.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    .fonts-loaded .rad-fade-down.rad-animate {
+        animation-name: rad-fade-down;
+        animation-duration: 1.1s;
+    }
+
+    @keyframes rad-fade-down {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+     
+    .rad-scale-down {
+        will-change: opacity, transform;
+        animation-name: rad-scale-down-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        transform-origin: 50% 0;
+    }
+
+    @keyframes rad-scale-down-fallback {
+        0% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        75% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+
+    .fonts-loaded .rad-scale-down.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+        transform: scaleY(0.95);
+    }
+
+    .fonts-loaded .rad-scale-down.rad-animate {
+        animation-name: rad-scale-down;
+        animation-duration: 1.1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-scale-down {
+        0% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+</style>
+
+
+
+<link rel="stylesheet" href="https://bardakelis.github.io/itdarborinka.github.io/css/main.css"/>
+
+<link rel="stylesheet" href="https://bardakelis.github.io/itdarborinka.github.io/css/rad-icons.css"/>
+
+<link rel="stylesheet" href="https://bardakelis.github.io/itdarborinka.github.io/css/custom.css"/>
+
+
+
+
+</head>
+
+<body>
+
+	<header class="header fixed-top rad-animation-group" id="header">
+  <div class="container rad-fade-in">
+    <nav class="navbar navbar-expand-lg navbar-light p-0">
+      <a class="navbar-brand" href="https://bardakelis.github.io/itdarborinka.github.io">
+        <img
+          class="img-responsive"
+          src="img/logo.png"
+          srcset="img/logo.png 1x, img/logo@2x.png 2x"
+          alt="Header Logo"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent, #header"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-lg-auto">
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#top10"
+              >TOP 10</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#top10-details"
+              >TOP 10 PAGAL SRITIS</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#contact"
+              >KONTAKTAI</a
+            >
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+	
+<section class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down">
+
+
+  <div class="container">
+    <div class="row">
+      <div class="show-col-12 show-col-sm-12 show-col-md-8 show-col-lg-7 show-col-xl-6">
+        <h1 class="display-1">
+          IT darbo rinkos poreikiai Lietuvoje
+          <br />
+          <span></span>
+        </h1>
+        <h5>Darbdavių ieškomų kompetencijų TOP 10 
+
+        </h5>
+        <p class="lead">Atnaujinta: 2020-02-17</p>
+      </p>
+      </div>
+    </div>
+
+    <div class="rad-showcase__bga">
+      <img
+        class="lozad img-responsive"
+        src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+        data-src="https://bardakelis.github.io/itdarborinka.github.io/img/promo/promo.jpg"
+        data-srcset="https://bardakelis.github.io/itdarborinka.github.io/img/promo/promo.jpg 1x, https://bardakelis.github.io/itdarborinka.github.io/img/promo/promo@2x.jpg 2x"
+        alt="Showcase image"
+      />
+    </div>
+    <h5>Kas tai?</h5> 
+    <p class="lead">
+      Čia rasite informaciją, gautą išanalizavus šimtus viešai prieinamų skelbimų populiariausiuose darbo paieškos portaluose Lietuvoje. Duomenys atnaujinami nuolat, todėl visuomet matote naujausią informaciją.
+  </br>Pateikiamas ir vidutinis skelbimuose įvardintų atlyginimų minimalių ir maksimalių atlyginimų rėžis, sugrupuotas bei suvidurkintas pagal skelbimuose sutinkamus technologijų raktažodžius. 
+  Siūlomų atlyginimų rėžius reikėtų vertinti tik kaip orientacinius, nes atlyginimai nurodomi ne visuose skelbimuose, be to, jie ne visada yra tikslūs.</p>
+  
+  <h5>Kam to reikia?</h5> 
+  <p class="lead">Galbūt planuojate pradėti savo, kaip IT specialisto, karjerą? O gal žadate keisti jau esamą IT specializaciją? Tuomet žemiau pateikta informacija galbūt padės lengviau apsispręsti, kurią kryptį ar technologiją vertėtų rinktis.
+      
+  
+    <div class="row platform-links">
+      <div class="show-col-12">
+        
+        <a href="https://www.linkedin.com/" target="_blank"
+          ><i class="icon-linkedin-line"></i
+        ></a>
+        
+        <a href="https://github.com/" target="_blank"
+          ><i class="icon-github-line"></i
+        ></a>
+        
+        <a href="https://twitter.com/" target="_blank"
+          ><i class="icon-twitter-line"></i
+        ></a>
+        
+        <a href="https://dribbble.com/" target="_blank"
+          ><i class="icon-dribbble-line"></i
+        ></a>
+        
+        <a href="https://www.behance.net/" target="_blank"
+          ><i class="icon-behance-line"></i
+        ></a>
+        
+        <a href="https://www.youtube.com/" target="_blank"
+          ><i class="icon-youtube-line"></i
+        ></a>
+        
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i class="icon-instagram-line"></i
+        ></a>
+        
+        <a href="https://www.facebook.com/" target="_blank"
+          ><i class="icon-facebook-line"></i
+        ></a>
+        
+        <a href="https://bardakelis.github.io/itdarborinka.github.io" target="_blank"
+          ><i class="icon-codepen-line"></i
+        ></a>
+        
+        <a href="https://www.yelp.com/" target="_blank"
+          ><i class="icon-yelp-line"></i
+        ></a>
+        
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+	
+<section class="section rad-animation-group pb-0" id="top10">
+  <div class="container rad-fade-down">
+    <div class="row d-flex flex-column-reverse flex-md-row">
+      <div class="col-12 col-md-8 pl-md-0 ">
+        <img
+          class="lozad img-responsive img-clip-left-backward"
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://bardakelis.github.io/itdarborinka.github.io/img/keyword_cloud/all_kwds.jpg"
+          data-srcset="https://bardakelis.github.io/itdarborinka.github.io/img/keyword_cloud/all_kwds.jpg 1x, https://bardakelis.github.io/itdarborinka.github.io/img/keyword_cloud/all_kwds@2x.jpg 2x"
+          alt="Top skills desired"
+        />
+      </div>
+      <div class="col-12 col-md-4 mt-4 mt-md-0 my-md-auto">
+        <h2>IT darbo rinkoje paklausiausios technologijos</h2>
+        <p class="lead"></p>
+        <p class="update">Atnaujinta: 2020-02-17</p>
+        <p class="lead">
+        Žemiau pateiktos IT kompetencijos, dažniausiai sutinkamos  darbo skelbimuose, nerūšiuojant jų į kategorijas. Kartu pateiktame raktažodžių debesyje galima rasti ir kompetencijas, kurios nepateko į TOP 10. Kuo didesnis šriftas, tuo raktažodis populiaresnis.
+        </p>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <p class="top-list">Technologijų  TOP 10:</p>
+        
+        <div class="progress">
+          <div class="progress-bar alltopkwds" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Java</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2390 - 4309 EUR (bruto) </p>
+
+        <div class="progress">
+          <div class="progress-bar alltopkwds" role="progressbar" style="width: 92%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">JavaScript</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2415 - 4205 EUR (bruto) </p>
+
+        <div class="progress">
+          <div class="progress-bar alltopkwds" role="progressbar" style="width: 74%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Linux</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2341 - 3905 EUR (bruto) </p>
+
+        <div class="progress">
+          <div class="progress-bar alltopkwds" role="progressbar" style="width: 72%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Git</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2529 - 4025 EUR (bruto) </p>
+
+        <div class="progress">
+          <div class="progress-bar alltopkwds" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">PHP</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2494 - 3947 EUR (bruto) </p>
+
+        <div class="progress">
+          <div class="progress-bar alltopkwds" role="progressbar" style="width: 68%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Docker</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2655 - 4534 EUR (bruto) </p>
+
+        <div class="progress">
+          <div class="progress-bar alltopkwds" role="progressbar" style="width: 58%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">React</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2674 - 4674 EUR (bruto) </p>
+
+        <div class="progress">
+          <div class="progress-bar alltopkwds" role="progressbar" style="width: 56%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Python</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2544 - 4257 EUR (bruto) </p>
+
+        <div class="progress">
+          <div class="progress-bar alltopkwds" role="progressbar" style="width: 55%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">.NET</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2619 - 4311 EUR (bruto) </p>
+
+        <div class="progress">
+          <div class="progress-bar alltopkwds" role="progressbar" style="width: 52%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">CSS</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2113 - 3881 EUR (bruto) </p>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+	
+
+<section id="top10-details" class="section section--border-bottom">
+  <div class="container">
+    <h2 class=" rad-animation-group rad-fade-down">
+      IT technologijos pagal sritis
+    </h2>
+    <div 
+     class="row row--padded rad-animation-group rad-fade-down">
+      <div class="col-12">
+      </div>
+    </div>    
+    
+    <div
+      class="row row--padded rad-animation-group rad-fade-down">
+      <div class="col-12 col-md-4 mt-4 mt-md-0 my-md-auto">
+        <h3>Platformos/operacinės sistemos</h3>
+        <p class="update">Atnaujinta: 2020-02-17</p>
+        <p class="lead">
+          Žemiau pateiktas populiariausių platformų bei operacinių sistemų sąrašas. Kartu pateiktame raktažodžių debesyje galima rasti ir platformas, kurios nepateko į TOP 10. Kuo didesnis šriftas, tuo raktažodis populiaresnis.
+        </p>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <p class="top-list">Platformų TOP 10:</p>
+
+        <div class="progress">
+          <div class="progress-bar platforms" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Linux</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2341 - 3905 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar platforms" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Docker</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2655 - 4534 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar platforms" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">AWS</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2610 - 4632 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar platforms" role="progressbar" style="width: 53%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Windows</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2129 - 3419 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar platforms" role="progressbar" style="width: 45%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Kubernetes</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2622 - 4452 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar platforms" role="progressbar" style="width: 45%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Azure</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2572 - 4208 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar platforms" role="progressbar" style="width: 35%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">iOS</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2304 - 4581 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar platforms" role="progressbar" style="width: 29%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Android</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2294 - 4612 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar platforms" role="progressbar" style="width: 18%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Windows Server</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2043 - 3274 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar platforms" role="progressbar" style="width: 16%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Google Cloud</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 3190 - 5300 EUR (bruto) </p>
+      </div>
+      <div class="col-12 col-md-8 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive '
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://bardakelis.github.io/itdarborinka.github.io/img/keyword_cloud/platforms_kwds.jpg"
+          data-srcset="https://bardakelis.github.io/itdarborinka.github.io/img/keyword_cloud/platforms_kwds.jpg 1x, https://bardakelis.github.io/itdarborinka.github.io/img/keyword_cloud/platforms_kwds@2x.jpg 2x"
+          alt="Platformos/operacinės sistemos"
+        />
+      </div>
+    </div>
+    
+    
+    <div 
+      class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row"
+      >
+      
+      <div class="col-12 col-md-8 pl-md-0 ">
+        <img
+          class='lozad img-responsive'
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://bardakelis.github.io/itdarborinka.github.io/img/keyword_cloud/programming_scripting_languages_kwds.jpg"
+          data-srcset="https://bardakelis.github.io/itdarborinka.github.io/img/keyword_cloud/programming_scripting_languages_kwds.jpg 1x, https://bardakelis.github.io/itdarborinka.github.io/img/keyword_cloud/programming_scripting_languages_kwds@2x.jpg 2x"
+          alt="Programavimo/skriptų rašymo kalbos"
+        />
+      </div>
+      <div class="col-12 col-md-4 mt-4 mt-md-0 my-md-auto">
+        <h3>Programavimo/skriptų rašymo kalbos</h3>
+        <p class="update">Atnaujinta: 2020-02-17 </p>
+        <p class="lead">
+          Žemiau pateiktas populiariausių programavimo, skriptų rašymo bei &#34;markup&#34; kalbų sąrašas. Kartu pateiktame raktažodžių debesyje galima rasti ir programavimo kalbas, kurios nepateko į TOP 10. Kuo didesnis šriftas, tuo raktažodis populiaresnis.
+        </p>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <p class="top-list">Programavimo kalbų TOP 10:</p>
+
+        <div class="progress">
+          <div class="progress-bar proglang" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Java</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2390 - 4309 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar proglang" role="progressbar" style="width: 92%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">JavaScript</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2415 - 4205 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar proglang" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">PHP</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2494 - 3947 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar proglang" role="progressbar" style="width: 56%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Python</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2544 - 4257 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar proglang" role="progressbar" style="width: 52%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">CSS</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2113 - 3881 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar proglang" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">HTML</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2172 - 3547 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar proglang" role="progressbar" style="width: 41%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">C#</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2365 - 4078 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar proglang" role="progressbar" style="width: 24%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Go</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2146 - 3484 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar proglang" role="progressbar" style="width: 20%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">C&#43;&#43;</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2512 - 3741 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar proglang" role="progressbar" style="width: 13%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Bash</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2236 - 4254 EUR (bruto) </p>        
+      </div>
+      </div>
+
+    
+    <div
+      class="row row--padded rad-animation-group rad-fade-down">
+      <div class="col-12 col-md-4 mt-4 mt-md-0 my-md-auto">
+        <h3>Duomenų bazės</h3>
+        <p class="update">Atnaujinta: 2020-02-17</p>
+        <p class="lead">
+          Žemiau pateiktas populiariausių duomenų bazių sąrašas. Kartu pateiktame raktažodžių debesyje galima rasti ir duomenų bazes, kurios nepateko į TOP 10. Kuo didesnis šriftas, tuo raktažodis populiaresnis.
+        </p>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <p class="top-list">Duomenų bazių TOP 10:</p>
+
+        <div class="progress">
+          <div class="progress-bar databases" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">MySQL</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2210 - 4214 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar databases" role="progressbar" style="width: 93%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Oracle</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2328 - 3975 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar databases" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">PostgreSQL</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2328 - 4988 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar databases" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Elasticsearch</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 3039 - 4840 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar databases" role="progressbar" style="width: 36%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">MongoDB</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2878 - 4205 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar databases" role="progressbar" style="width: 35%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Redis</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 3245 - 5544 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar databases" role="progressbar" style="width: 23%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Microsoft SQL Server</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2415 - 4148 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar databases" role="progressbar" style="width: 14%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Cassandra</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 3145 - 5821 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar databases" role="progressbar" style="width: 7%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">MariaDB</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2180 - 4358 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar databases" role="progressbar" style="width: 7%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Firebase</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 1787 - 5301 EUR (bruto) </p>
+      </div>
+      <div class="col-12 col-md-8 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive '
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://bardakelis.github.io/itdarborinka.github.io/img/keyword_cloud/databases_kwds.jpg"
+          data-srcset="https://bardakelis.github.io/itdarborinka.github.io/img/keyword_cloud/databases_kwds.jpg 1x, https://bardakelis.github.io/itdarborinka.github.io/img/keyword_cloud/databases_kwds@2x.jpg 2x"
+          alt="Duomenų bazės"
+        />
+      </div>
+    </div>
+
+    
+    <div 
+      class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row"
+      >  
+      <div class="col-12 col-md-8 pl-md-0 ">
+        <img
+          class='lozad img-responsive'
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://bardakelis.github.io/itdarborinka.github.io/img/keyword_cloud/web_frameworks_kwds.jpg"
+          data-srcset="https://bardakelis.github.io/itdarborinka.github.io/img/keyword_cloud/web_frameworks_kwds.jpg 1x, https://bardakelis.github.io/itdarborinka.github.io/img/keyword_cloud/web_frameworks_kwds@2x.jpg 2x"
+          alt="Web Framework&#39;ai"
+        />
+      </div>
+      <div class="col-12 col-md-4 mt-4 mt-md-0 my-md-auto">
+        <h3>Web Framework&#39;ai</h3>
+        <p class="update">Atnaujinta: 2020-02-17 </p>
+        <p class="lead">
+          Žemiau pateiktas populiariausių Web framework&#39;ų sąrašas. Kartu pateiktame raktažodžių debesyje galima rasti ir Web framework&#39;ų, kurie nepatenka į TOP 10. Kuo didesnis šriftas, tuo raktažodis populiaresnis.
+        </p>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <p class="top-list">Web framework'ų TOP 10:</p>
+
+        <div class="progress">
+          <div class="progress-bar webframeworks" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">React</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2674 - 4674 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar webframeworks" role="progressbar" style="width: 71%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Spring</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2565 - 4515 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar webframeworks" role="progressbar" style="width: 65%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Angular</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2594 - 4262 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar webframeworks" role="progressbar" style="width: 29%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Laravel</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2739 - 4148 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar webframeworks" role="progressbar" style="width: 28%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">jQuery</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2404 - 3974 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar webframeworks" role="progressbar" style="width: 20%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Vue.js</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2705 - 4447 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar webframeworks" role="progressbar" style="width: 19%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">ASP.NET</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2391 - 4203 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar webframeworks" role="progressbar" style="width: 14%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">React.js</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2913 - 4263 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar webframeworks" role="progressbar" style="width: 9%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Express</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2113 - 3447 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar webframeworks" role="progressbar" style="width: 8%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Drupal</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 1754 - 3787 EUR (bruto) </p>
+      </div>
+      </div>
+
+    
+    <div
+      class="row row--padded rad-animation-group rad-fade-down">
+      <div class="col-12 col-md-4 mt-4 mt-md-0 my-md-auto">
+        <h3>Kiti Framework&#39;ai</h3>
+        <p class="update">Atnaujinta: 2020-02-17</p>
+        <p class="lead">
+          Žemiau pateiktas populiariausių framework&#39;ų sąrašas. Kartu pateiktame raktažodžių debesyje galima rasti ir frameworkų, kurie nepatenka į TOP 10. Kuo didesnis šriftas, tuo raktažodis populiaresnis.
+        </p>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <p class="top-list">Framework'ų TOP 10:</p>
+
+        <div class="progress">
+          <div class="progress-bar otherframeworks otherframeworks" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">.NET</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2619 - 4311 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar otherframeworks otherframeworks" role="progressbar" style="width: 28%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Node.js</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 3159 - 5084 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar otherframeworks otherframeworks" role="progressbar" style="width: 22%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">.NET Core</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2854 - 4555 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar otherframeworks otherframeworks" role="progressbar" style="width: 22%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">React Native</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2891 - 4610 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar otherframeworks otherframeworks" role="progressbar" style="width: 22%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Active Directory</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2072 - 2996 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar otherframeworks otherframeworks" role="progressbar" style="width: 21%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Hadoop</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2857 - 4916 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar otherframeworks otherframeworks" role="progressbar" style="width: 1%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Xamarin</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 3109 - 4070 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar otherframeworks otherframeworks" role="progressbar" style="width: 1%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Pandas</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2200 - 3300 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar otherframeworks otherframeworks" role="progressbar" style="width: 1%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Cordova</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2064 - 4375 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar otherframeworks otherframeworks" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Unity 3D</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 1300 - 0 EUR (bruto) </p>
+      </div>
+      <div class="col-12 col-md-8 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive '
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://bardakelis.github.io/itdarborinka.github.io/img/keyword_cloud/other_frameworks_tools_kwds.jpg"
+          data-srcset="https://bardakelis.github.io/itdarborinka.github.io/img/keyword_cloud/other_frameworks_tools_kwds.jpg 1x, https://bardakelis.github.io/itdarborinka.github.io/img/keyword_cloud/other_frameworks_tools_kwds@2x.jpg 2x"
+          alt="Kiti Framework&#39;ai"
+        />
+      </div>
+    </div>
+
+    
+    <div 
+      class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row"
+      >      
+      <div class="col-12 col-md-8 pl-md-0 ">
+        <img
+          class='lozad img-responsive'
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://bardakelis.github.io/itdarborinka.github.io/img/keyword_cloud/tools_kwds.jpg"
+          data-srcset="https://bardakelis.github.io/itdarborinka.github.io/img/keyword_cloud/tools_kwds.jpg 1x, https://bardakelis.github.io/itdarborinka.github.io/img/keyword_cloud/tools_kwds@2x.jpg 2x"
+          alt="Įvairūs IT įrankiai"
+        />
+      </div>
+      <div class="col-12 col-md-4 mt-4 mt-md-0 my-md-auto">
+        <h3>Įvairūs IT įrankiai</h3>
+        <p class="update">Atnaujinta: 2020-02-17 </p>
+        <p class="lead">
+          Žemiau pateiktas populiariausių skirtingų IT įrankių sąrašas. Kartu pateiktame raktažodžių debesyje galima rasti ir įrankių, kurie nepatenka į TOP 10. Kuo didesnis šriftas, tuo raktažodis populiaresnis.
+        </p>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <p class="top-list">IT įrankių TOP 10:</p>
+
+        <div class="progress">
+          <div class="progress-bar tools" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Git</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2529 - 4025 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar tools" role="progressbar" style="width: 53%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">JIRA</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2402 - 3861 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar tools" role="progressbar" style="width: 41%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Jenkins</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2618 - 4470 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar tools" role="progressbar" style="width: 30%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Selenium</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2054 - 4004 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar tools" role="progressbar" style="width: 22%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Ansible</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2484 - 4831 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar tools" role="progressbar" style="width: 18%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Maven</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2591 - 4208 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar tools" role="progressbar" style="width: 13%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Office 365</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 1971 - 3623 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar tools" role="progressbar" style="width: 12%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Puppet</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2323 - 5130 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar tools" role="progressbar" style="width: 12%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Chef</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2120 - 4846 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar tools" role="progressbar" style="width: 12%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Bitbucket</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2717 - 4523 EUR (bruto) </p>        
+      </div>
+      </div>
+
+    
+    <div
+      class="row row--padded rad-animation-group rad-fade-down">
+      <div class="col-12 col-md-4 mt-4 mt-md-0 my-md-auto">
+        <h3>Informacijos sauga</h3>
+        <p class="update">Atnaujinta: 2020-02-17</p>
+        <p class="lead">
+          Žemiau pateiktas populiariausių informacijos saugos kompetencijų bei pageidaujamų sertifikatų sąrašas. Kartu pateiktame raktažodžių debesyje galima rasti ir kompetencijas, kurios nepateko į TOP 10. Kuo didesnis šriftas, tuo raktažodis populiaresnis.
+        </p>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <p class="top-list">InfoSec technologijų TOP 10:</p>
+
+        <div class="progress">
+          <div class="progress-bar infosec" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Checkmarx</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2643 - 4020 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar infosec" role="progressbar" style="width: 72%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">SIEM</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2278 - 4560 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar infosec" role="progressbar" style="width: 54%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Burp</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 1792 - 3282 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar infosec" role="progressbar" style="width: 45%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">IDS</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2062 - 4400 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar infosec" role="progressbar" style="width: 36%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Penetration Testing</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 1839 - 2820 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar infosec" role="progressbar" style="width: 36%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">IPS</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 1950 - 4400 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar infosec" role="progressbar" style="width: 36%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Splunk</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2250 - 4275 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar infosec" role="progressbar" style="width: 36%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">CISA</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2387 - 2800 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar infosec" role="progressbar" style="width: 36%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">CISSP</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2452 - 3450 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar infosec" role="progressbar" style="width: 36%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">GCIH</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2757 - 3942 EUR (bruto) </p>
+      </div>
+      <div class="col-12 col-md-8 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive '
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://bardakelis.github.io/itdarborinka.github.io/img/keyword_cloud/infosec_kwds.jpg"
+          data-srcset="https://bardakelis.github.io/itdarborinka.github.io/img/keyword_cloud/infosec_kwds.jpg 1x, https://bardakelis.github.io/itdarborinka.github.io/img/keyword_cloud/infosec_kwds@2x.jpg 2x"
+          alt="Informacijos sauga"
+        />
+      </div>
+    </div>
+
+    
+    <div 
+      class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row"
+
+      >
+      <div class="col-12 col-md-8 pl-md-0 ">
+        <img
+          class='lozad img-responsive'
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://bardakelis.github.io/itdarborinka.github.io/img/keyword_cloud/networking_kwds.jpg"
+          data-srcset="https://bardakelis.github.io/itdarborinka.github.io/img/keyword_cloud/networking_kwds.jpg 1x, https://bardakelis.github.io/itdarborinka.github.io/img/keyword_cloud/networking_kwds@2x.jpg 2x"
+          alt="IP tinklai (Networking)"
+        />
+      </div>
+      <div class="col-12 col-md-4 mt-4 mt-md-0 my-md-auto">
+        <h3>IP tinklai (Networking)</h3>
+        <p class="update">Atnaujinta: 2020-02-17 </p>
+        <p class="lead">
+          Žemiau pateiktas populiariausių IP tinklų kompetencijų sąrašas. Kartu pateiktame raktažodžių debesyje galima rasti ir kompetencijas, kurios nepateko į TOP 10. Kuo didesnis šriftas, tuo raktažodis populiaresnis.
+        </p>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <p class="top-list">Tinklo technologijų TOP 10:</p>
+
+        <div class="progress">
+          <div class="progress-bar networking" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">IP</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2062 - 3508 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar networking" role="progressbar" style="width: 89%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">TCP</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2182 - 3724 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar networking" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">VPN</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 1437 - 3765 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar networking" role="progressbar" style="width: 58%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Routing</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2437 - 4077 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar networking" role="progressbar" style="width: 37%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">DHCP</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2019 - 2266 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar networking" role="progressbar" style="width: 34%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Firewall</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2120 - 3681 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar networking" role="progressbar" style="width: 34%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Proxy</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 3302 - 4979 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar networking" role="progressbar" style="width: 24%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Cisco</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 1810 - 2493 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar networking" role="progressbar" style="width: 24%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Load balancing</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2858 - 3423 EUR (bruto) </p>
+
+        <div class="progress">
+          <div class="progress-bar networking" role="progressbar" style="width: 24%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">NAT</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2371 - 3600 EUR (bruto) </p>
+      </div>
+    </div>
+
+    
+    <div
+      class="row row--padded rad-animation-group rad-fade-down">
+      <div class="col-12 col-md-4 mt-4 mt-md-0 my-md-auto">
+        <h3>&#34;Madingos&#34; frazės (buzzwords)</h3>
+        <p class="update">Atnaujinta: 2020-02-17</p>
+        <p class="lead">
+          Žemiau pateiktas populiariausių skelbimuose sutinkamų &#34;buzzword&#39;ų&#34; sąrašas. Kartu pateiktame raktažodžių debesyje galima rasti ir frazes, kurios nepateko į TOP 10. Kuo didesnis šriftas, tuo raktažodis populiaresnis.
+        </p>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <p class="top-list">"Madingų" frazių TOP 10:</p>
+
+        <div class="progress">
+          <div class="progress-bar buzzwords" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Agile</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2562 - 4351 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar buzzwords" role="progressbar" style="width: 49%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Automation</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2213 - 3994 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar buzzwords" role="progressbar" style="width: 43%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Cloud</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2627 - 4612 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar buzzwords" role="progressbar" style="width: 41%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Security</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2446 - 4141 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar buzzwords" role="progressbar" style="width: 36%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Scrum</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2512 - 4260 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar buzzwords" role="progressbar" style="width: 34%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Analytics</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2412 - 3986 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar buzzwords" role="progressbar" style="width: 24%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">DevOps</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2768 - 4634 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar buzzwords" role="progressbar" style="width: 20%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">IoT</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 1369 - 2619 EUR (bruto) </p>
+      
+        <div class="progress">
+          <div class="progress-bar buzzwords" role="progressbar" style="width: 16%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Continuous Integration</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2456 - 4841 EUR (bruto) </p>
+
+        <div class="progress">
+          <div class="progress-bar buzzwords" role="progressbar" style="width: 16%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">ITIL</div>
+        </div>
+        <p class="salary-range">Siūlomas vid. atlygis: 2066 - 2760 EUR (bruto) </p>
+      </div>
+      <div class="col-12 col-md-8 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive '
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://bardakelis.github.io/itdarborinka.github.io/img/keyword_cloud/buzzwords_kwds.jpg"
+          data-srcset="https://bardakelis.github.io/itdarborinka.github.io/img/keyword_cloud/buzzwords_kwds.jpg 1x, https://bardakelis.github.io/itdarborinka.github.io/img/keyword_cloud/buzzwords_kwds@2x.jpg 2x"
+          alt="&#34;Madingos&#34; frazės (buzzwords)"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    
+<section id="contact" class="section section--contact pt-0">
+    <div class="container">
+        <div class="contact">
+            <h3 style="text-align:left;">Kontaktai</h3>
+            <p class="lead">Turite pastabų, klausimų, pasiūlymų? Brūkštelėkite žinutę ir mes artimiausiu metu su Jumis susisieksime:</p>
+            <div class="row pt-2">
+                <div class="contact-form">
+                    <form method="post" id="reused_form" onsubmit="myButton.disabled = true; return true;">
+                        <div class="row-contacts">
+                            <div class="col-12 col-sm-6">
+                                <input id="name" type="text" name="Name" oninvalid="InvalidMsg(this);" required title="Įrašykite savo vardą" maxlength="50"
+                                       placeholder="Jūsų vardas"/>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input id="email" type="email" name="Email" oninvalid="InvalidMsg(this);" required title="Įrašykite savo el. pašto adresą" maxlength="50"
+                                       placeholder="Jūsų el. pašto adresas"/>
+                            </div>
+                        </div>
+                        <div class="row-contacts pt-4">
+                            <div class="col-12">
+                                <textarea id="message" name="Message" type="text" cols="20" rows="3" maxlength="6000" oninvalid="InvalidMsg(this);" required title="Įrašykite žinutę"
+                                           placeholder="Žinutės tekstas"></textarea>
+                                           <div class="g-recaptcha" data-sitekey="6LcH7tkUAAAAAEHE_GppfoF8togXZN7beDjGeBgo" data-callback="enableBtn" data-expired-callback="disableBtn"></div>
+                            </div>
+                        </div>
+                        <div class="row-contacts ptt-4">
+                            <div class="send-button">
+                                <button type="submit" id="send-msg" name="myButton" class="button-primary" disabled="true">
+                                    <i class="icon-mail-fill"></i>
+                                    Siųsti
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="response-msg">
+                        <div id="success_message" style="display:none; font-weight:bold;"><p style="font-weight:bold;color:green;">Ačiū, žinutė sėkmingai išsiųsta!</p></div>
+                        <div id="error_message" style="display:none; font-weight:bold;"> <p style="color:red; font-weight:bold; ">Atsiprašome, išsiųsti nepavyko...</p> </div>
+                        <div id="error_recaptcha" style="display:none; font-weight:bold;"> <p style="color:red; font-weight:bold; ">Pažymėkite "Aš ne robotas" laukelį!</p></div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-lg-5 contact__info" style="display:none;">
+                    <h4>Tel.</h4>
+                    <span>&#43;37067890123</span>
+                    <h4>El. paštas</h4>
+                    <span><a href="mailto:info@itdarborinka.lt">info@itdarborinka.lt</a></span>
+                    <h4>Addresas</h4>
+                    <span>www.itdarborinka.lt</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+	<footer class="footer">
+  <div class="container">
+    <div class="footer__left">
+      <div class="footer__copy">
+        
+        <a style="text-decoration: none;" href="https://github.com/radity/raditian-free-hugo-theme/blob/master/LICENSE">© Template by Raditian</a>, design by itdarborinka.lt
+        
+      </div>
+    </div>
+    <div class="footer__links">
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a class="nav-link" href="/">PRADŽIA</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#top10">TOP 10</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#top10-details">TOP 10 PAGAL SRITIS</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">KONTAKTAI</a>
+        </li>
+        
+      </ul>
+    </div>
+
+  </div>
+</footer>
+
+
+    <script src='https://bardakelis.github.io/itdarborinka.github.io/js/rad-animations.js'></script>
+<script src='https://bardakelis.github.io/itdarborinka.github.io/js/library/lozad.min.js'></script>
+<script>
+  window.addEventListener("load", function() {
+    var observer = window.lozad(".lozad", {
+      rootMargin: window.innerHeight / 2 + "px 0px",
+      threshold: 0.01
+    }); 
+    observer.observe();
+  });
+</script>
+<script src='https://bardakelis.github.io/itdarborinka.github.io/js/library/jquery-3.3.1.slim.min.js'></script>
+<script src='https://bardakelis.github.io/itdarborinka.github.io/js/jquery-3.4.1.min.js'></script>
+<script src="js/form.js"></script>
+
+<script src='https://bardakelis.github.io/itdarborinka.github.io/js/library/bootstrap.min.js'></script>
+<script src='https://bardakelis.github.io/itdarborinka.github.io/js/sticky-header.js'></script>
+<script src='https://bardakelis.github.io/itdarborinka.github.io/js/library/smooth-scroll.polyfills.min.js'></script>
+<script src='https://bardakelis.github.io/itdarborinka.github.io/js/library/fontfaceobserver.js'></script>
+<script>
+  (function(w) {
+    
+    if (w.document.documentElement.className.indexOf("fonts-loaded") > -1) {
+      return;
+    }
+    var fontA = new w.FontFaceObserver("Inter", {
+      weight: 300
+    });
+    var fontB = new w.FontFaceObserver("Inter", {
+      weight: 400
+    });
+    var fontC = new w.FontFaceObserver("Inter", {
+      weight: 500
+    });
+    var fontD = new w.FontFaceObserver("Inter", {
+      weight: 600
+    });
+    var fontE = new w.FontFaceObserver("Inter", {
+      weight: 700
+    });
+    var fontF = new w.FontFaceObserver("Inter", {
+      weight: 900
+    });
+    w.Promise.all([fontA.load(), fontC.load(), fontF.load()]).then(function() {
+      w.document.documentElement.className += " fonts-loaded";
+    });
+  })(this);
+</script>
+<script>
+  const scroll = new SmoothScroll('a[href*="#"]');
+    $('a.nav-link').on('click', () => {
+      const navbar = $('.navbar-collapse');
+      if (navbar && navbar.hasClass('show')) {
+        $('.navbar-toggler').click();
+      }
+    })
+</script>
+
+</body>
+
+</html>
