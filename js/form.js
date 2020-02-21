@@ -68,7 +68,7 @@ $(function()
 
                     $.ajax({
                 type: "POST",
-                url: 'https://laselis.lt/kontakciukai/onemore/phpmailer/processor.php',
+                url: 'https://laselis.lt/feedback-form-handler/processor.php',
                 data: $form.serialize(),
                 success: after_form_submitted,
                 dataType: 'text'
