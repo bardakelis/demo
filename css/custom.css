@@ -446,6 +446,7 @@ input[type=text], input[type=email], textarea {
     font-size: 16px;
     font-weight: 300;
     line-height: 2;
+    background-color: #f8f8f8;
     /*color: #274468;*/
 
     border-bottom: 1px solid #274468;
@@ -513,4 +514,16 @@ p a, span a {
 
 .footer .navbar-nav .nav-item .nav-link {
     color: #274468;
+}
+.header--sticky-triggered {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #f8f8f8;
+    box-shadow: 0 0 30px 0
+    rgba(0,0,0,.1);
+}
+.section--contact .container {
+    text-align: right;
+    background-color: #f8f8f8;
+    box-shadow: 0 42px 34px -16px rgba(0, 0, 0, .3);
 }
