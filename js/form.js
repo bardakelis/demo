@@ -51,6 +51,22 @@ $(function()
         }//else
     }
 
+    function after_form_failed(data)
+    {
+        if(data != 'success')
+        {
+            $('form#reused_form').show();
+            $('#success_message').hide();
+            $('#error_message').show();
+            $('#error_recaptcha').hide();
+            //clear fields
+            $('input[type="text"],textarea').val('');
+            $('input[type="email"],textarea').val('');
+            grecaptcha.reset();
+        
+        }    
+    }
+
         $('#reused_form').submit(function(e)
       {
         e.preventDefault();
@@ -71,6 +87,7 @@ $(function()
                 url: 'https://wpywksih6e.execute-api.eu-west-1.amazonaws.com/main/contact',
                 data: $form.serialize(),
                 success: after_form_submitted,
+                error: after_form_failed,
                 dataType: 'text'
             });
 
