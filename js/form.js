@@ -68,7 +68,7 @@ $(function()
 
                     $.ajax({
                 type: "POST",
-                url: 'https://laselis.lt/feedback-form-handler/processor.php',
+                url: 'https://wpywksih6e.execute-api.eu-west-1.amazonaws.com/main/contact',
                 data: $form.serialize(),
                 success: after_form_submitted,
                 dataType: 'text'
